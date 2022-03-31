@@ -30,8 +30,7 @@ feel free to fork it and make your own gitrepos of it
 
 Example Usage:
 
- from encapsulated import encapsulated`
-
+    from encapsulated import encapsulated
     
     @encapsulated()
     class SomeClass:
