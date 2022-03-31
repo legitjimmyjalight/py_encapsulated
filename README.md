@@ -30,26 +30,25 @@ feel free to fork it and make your own gitrepos of it
 
 Example Usage:
 
-`
-from encapsulated import encapsulated
+ from encapsulated import encapsulated`
 
-\@encapsulated()
-class SomeClass:
-     __aPrivateVar : int
-     _aProtectedVar : float
-     aPublicVar : str
+    
+    @encapsulated()
+    class SomeClass:
+        __aPrivateVar : int
+        _aProtectedVar : float
+        aPublicVar : str
 
-     def __init__(self):
-         self.__anotherPrivateVar = 1
-         self._anotherProtectedVar = "foo"
-         self.anotherPublicVar = {}
+        def __init__(self):
+            self.__anotherPrivateVar = 1
+            self._anotherProtectedVar = "foo"
+            self.anotherPublicVar = {}
 
-     def __aPrivateMethod(self):
-         print("a private method")
+        def __aPrivateMethod(self):
+            print("a private method")
 
-     def _aProtectedMethod(self):
-         print("a protected method")
+        def _aProtectedMethod(self):
+            print("a protected method")
 
-     def aPublicMethod(self):
-         print("a public method")
-`
+        def aPublicMethod(self):
+            print("a public method")
