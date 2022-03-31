@@ -33,7 +33,7 @@ Example Usage:
 `
 from encapsulated import encapsulated
 
-@encapsulated()
+\@encapsulated()
 class SomeClass:
      __aPrivateVar : int
      _aProtectedVar : float
