@@ -16,20 +16,21 @@ Example Usage
 
 from encapsulated import encapsulated
 
-# note, you have to put the brackets after encapsulated,
-# because I didn't know how to make that unnecessary, maybe someone could teach me how
-# 
-# but, also if you put inside @encapsulated, strict=True, like this @encapsulated(strict=True)
-# it will make the class strict, in the sense, that you can not dynamically add properties to it
-#
-# also, if you use the dataclass decorator,
-# I found that you have to put the encapsulated decorator first or it bugs out, I don't know why
-#
-# This class might not work perfectly. I suggest you test it, to see how it works for you
-#
-# Also, if you think you can make this encapsulated decorator better,
-# feel free to fork it and make your own gitrepos of it
-#
+"""
+note, you have to put the brackets after encapsulated,
+because I didn't know how to make that unnecessary, maybe someone could teach me how
+ 
+but, also if you put inside @encapsulated, strict=True, like this @encapsulated(strict=True)
+it will make the class strict, in the sense, that you can not dynamically add properties to it
+
+also, if you use the dataclass decorator,
+I found that you have to put the encapsulated decorator first or it bugs out, I don't know why
+
+This class might not work perfectly. I suggest you test it, to see how it works for you
+
+Also, if you think you can make this encapsulated decorator better,
+feel free to fork it and make your own gitrepos of it
+"""
 @encapsulated()
 class SomeClass:
      __aPrivateVar : int
