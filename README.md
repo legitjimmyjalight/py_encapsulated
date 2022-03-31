@@ -10,17 +10,14 @@ It works for class methods too.
 
 Grab a copy, using git, like this:
 
-git clone https://github.com/legitjimmyjalight/py_encapsulated
+`git clone https://github.com/legitjimmyjalight/py_encapsulated`
 
-Example Usage
+Notes: 
 
-from encapsulated import encapsulated
-
-"""
-note, you have to put the brackets after encapsulated,
+you have to put the brackets after encapsulated decorator, like this: `@encapsulated()`,
 because I didn't know how to make that unnecessary, maybe someone could teach me how
  
-but, also if you put inside @encapsulated, strict=True, like this @encapsulated(strict=True)
+but, also if you put inside @encapsulated, `strict=True`, like this `@encapsulated(strict=True)`
 it will make the class strict, in the sense, that you can not dynamically add properties to it
 
 also, if you use the dataclass decorator,
@@ -30,7 +27,12 @@ This class might not work perfectly. I suggest you test it, to see how it works 
 
 Also, if you think you can make this encapsulated decorator better,
 feel free to fork it and make your own gitrepos of it
-"""
+
+Example Usage:
+
+`
+from encapsulated import encapsulated
+
 @encapsulated()
 class SomeClass:
      __aPrivateVar : int
@@ -50,3 +52,4 @@ class SomeClass:
 
      def aPublicMethod(self):
          print("a public method")
+`
